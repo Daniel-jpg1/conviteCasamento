@@ -225,12 +225,6 @@ canvas.confetti{
   }
 }
 
-/* Forçar cores fixas mesmo em dark mode */
-.card, .cover, .details, .btn, .gift-card {
-  background-color: initial !important;
-  color: initial !important;
-}
-
 @media (max-width: 768px) {
   .card {
     grid-template-columns: 1fr; /* empilha o conteúdo */
@@ -279,14 +273,6 @@ canvas.confetti{
     text-align: center;
   }
 }
-
-@media (prefers-color-scheme: dark) {
-  .card, .cover {
-    background-color: #fff5f2; 
-    color: #333;
-  }
-}
-
 
 
 
