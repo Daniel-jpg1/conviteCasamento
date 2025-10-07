@@ -34,7 +34,7 @@ document.getElementById('closeModal').addEventListener('click', ()=>{
 
 document.getElementById('submitRsvp').addEventListener('click', () => {
   const name = document.getElementById('inputName').value.trim();
-  const qty = document.getElementById('inputQty').value || '1';
+  const qty = document.getElementById('inputQty').value || '0';
   
   if (!name) { 
     document.getElementById('rsvpMsg').textContent = 'Por favor, digite seu nome.'; 
@@ -79,7 +79,7 @@ document.getElementById('copyPix').addEventListener('click', async () => {
 
   try {
     await navigator.clipboard.writeText(key);
-    msg.textContent = 'Chave copiada ✅';
+    msg.textContent = 'Chave copiada ✅ Muito obrigado ❤️';
   } catch (err) {
 
     const textarea = document.createElement('textarea');
@@ -88,7 +88,7 @@ document.getElementById('copyPix').addEventListener('click', async () => {
     textarea.select();
     try {
       document.execCommand('copy');
-      msg.textContent = 'Chave copiada ✅';
+      msg.textContent = 'Chave copiada ✅ Muito obrigado ❤️';
     } catch {
       msg.textContent = 'Não foi possível copiar 😅';
     }

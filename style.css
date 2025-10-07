@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Alex+Brush&family=Playfair+Display:wght@400;700&display=swap');
+
 :root {
   --terracota: #b85a42;
   --white: #ffffff;
@@ -11,9 +13,7 @@
 html,body{height:100%;margin:0}
 
 body {
-  background: 
-    url('imagens/flores-bg.png') no-repeat center top, 
-    linear-gradient(145deg, #f3e8e2, #ffe8e0);
+background: linear-gradient(145deg, #e8ddd6, #ffd9d2);
   background-size: cover, cover;
   color: var(--text);
   display: flex;
@@ -21,10 +21,8 @@ body {
   justify-content: center;
   padding: 60px 24px;
   min-height: 100vh;
-  font-family: "Inter", system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-}
-
-
+  
+  }
 
 .card {
   width: 100%;
@@ -38,11 +36,9 @@ body {
   gap: 20px;
   align-items: center;
   animation: fadeInSmooth 1.2s ease-in-out;
-  font-family: 'Playfair Display', serif;
 }
 
 .card h1 {
-  font-family: 'Great Vibes', cursive;
   color: #b85a42;
   font-size: 2.8rem;
   text-align: center;
@@ -51,10 +47,11 @@ body {
 .left{padding:18px;}
 
 .names{
-  font-size:32px;
-  letter-spacing:1px;
+  font-size:40px;
+  letter-spacing:4px;
   margin:6px 0 12px;
-  font-weight:700;
+  font-weight:600;
+  font-family: 'Alex Brush', cursive;
 }
 
 .subtitle{opacity:0.9; margin-bottom:18px;}
@@ -83,6 +80,7 @@ body {
   font-weight:700;
   color: #fff;
   background: #b85a42;
+  font-family: 'Playfair Display', serif;
 }
 
 .print{  background: #b85a42; color: #fff; border:1px solid rgba(255,255,255,0.12)}
@@ -116,7 +114,7 @@ body {
   display:none;
   align-items:center;
   justify-content:center;
-  background:rgba(0,0,0,0.55)
+  background:rgba(0,0,0,0.55);
 }
 
 .modal{
@@ -145,7 +143,7 @@ canvas.confetti{
 .gift-bg {
   position: fixed;
   inset: 0;
-  display: none; /* fica escondido até abrir */
+  display: none; 
   justify-content: center;
   align-items: center;
   background: rgba(0,0,0,0.5);
@@ -213,6 +211,21 @@ canvas.confetti{
   text-align: center;
 }
 
+@keyframes openCard {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
 
 @media (max-width: 768px) {
   .card {
@@ -223,7 +236,7 @@ canvas.confetti{
   }
 
   .right {
-    order: -1; /* imagem e mensagem vão pra cima */
+    order: 2; /* imagem e mensagem vão pra cima */
   }
 
   .cover {
@@ -236,6 +249,7 @@ canvas.confetti{
   .names {
     font-size: 26px;
     text-align: center;
+    font-family: 'Alex Brush', cursive;
   }
 
   .subtitle {
