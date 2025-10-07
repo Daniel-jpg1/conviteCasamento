@@ -225,8 +225,6 @@ canvas.confetti{
   }
 }
 
-
-
 @media (max-width: 768px) {
   .card {
     grid-template-columns: 1fr; /* empilha o conteúdo */
@@ -236,7 +234,7 @@ canvas.confetti{
   }
 
   .right {
-    order: 2; /* imagem e mensagem vão pra cima */
+    order: -1; /* imagem e mensagem vão pra cima */
   }
 
   .cover {
