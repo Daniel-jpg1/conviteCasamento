@@ -4,7 +4,7 @@ const INVITATION = {
   names: 'Daniel & Mabelle',
   subtitle: 'Temos a alegria de convidar você para celebrar o nosso casamento.',
   dateText: '26 de Outubro de 2025 — 15:00',
-  placeText: 'Inocoop — Rua L, 230 — Cruz das Almas, BA',
+  placeText: 'Inocoop — Rua L, 226 — Cruz das Almas, BA',
   attire: 'Esporte fino',
   notes: 'Confirme presença até 12/10.',
   shortMsg: 'Junte-se a nós para celebrar o amor, a amizade e uma nova etapa nas nossas vidas.'
